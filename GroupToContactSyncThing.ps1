@@ -12,12 +12,12 @@ PURPOSE. THE ENTIRE RISK OF USE, INABILITY TO USE, OR RESULTS FROM THE USE OF TH
 [CmdletBinding(SupportsShouldProcess=$true)]
 param(
   [Parameter(Mandatory=$true)]
-  [string]$SourceTenantDomain = "thing1.onmicrosoft.com",
+  [string]$SourceTenantDomain = "source.onmicrosoft.com",
 
   [Parameter(Mandatory=$true)]
-  [string]$TargetTenantDomain = "thing2.onmicrosoft.com",
+  [string]$TargetTenantDomain = "target.onmicrosoft.com",
 
-  [string]$LogRoot = "C:\Logs\GroupToContactSync",
+  [string]$LogRoot = "C:\Logs\GroupToContactSyncThing",
 
   [ValidateSet(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)]
   [int]$StampCustomAttribute = 15,
@@ -391,4 +391,5 @@ finally {
   Write-Host "Run folder: $RunFolder" -ForegroundColor Cyan
   Write-Host "Change log : $ChangeLogPath" -ForegroundColor Cyan
   Write-Host "Transcript : $TranscriptPath" -ForegroundColor Cyan
+
 }
