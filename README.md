@@ -4,6 +4,8 @@ A PowerShell script used to synchronize **groups from a source Microsoft Entra t
 
 This is commonly used for **cross-tenant GAL visibility**, where groups in one tenant need to appear as contacts in another.
 
+**NOTE** : at the top of the script there are 4 variables defined as user defined, these are not passed in the script PARAMS section, you must define the attributes that will be populated (other than mail) that will be used when creating vs. updating an existing contact\mailcontact.
+
 ---
 
 ## Usage
