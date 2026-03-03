@@ -44,7 +44,7 @@ if ($schedule)
 # USER-DEFINED ATTRIBUTES
 # -------------------------
 $CreateContactAttrs = @{
-  Company    = "Thing1"
+  Company    = "Contoso"
   Department = "Cross-Tenant Syncthing"
   Title      = "Group copy"
 }
@@ -55,7 +55,7 @@ $CreateMailContactAttrs = @{
 }
 
 $UpdateContactAttrs = @{
-  Company    = "Thing1"
+  Company    = "Contoso"
   Department = "Cross-Tenant Syncthing"
 }
 
@@ -393,3 +393,4 @@ finally {
   Write-Host "Transcript : $TranscriptPath" -ForegroundColor Cyan
 
 }
+
